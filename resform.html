@@ -1,0 +1,50 @@
+<!Doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Registration Form </title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="title">
+            Registration Form
+        </div>
+        <div class="form" >
+            <form action="addstudent.php" method="POST">
+            <div class="input_field">
+                <label for="sname"> Student Name :</label>
+                <input type="text" id="sname" name="sname" class="input">
+            </div>
+            <div class="input_field">
+                <label for="sage"> Age :</label>
+                <input type="text" id="sage" name="sage" class="input">
+            </div>
+            <div class="input_field">
+                <label for="sclass"> Class :</label>
+                <input type="text" id="sclass" name="sclass" class="input">
+            </div>
+            <div class="input_field">
+                <label for="saddress"> Address :</label>
+                <textarea class="textarea" id="saddress" name="saddress"></textarea>
+            </div>
+            <div class="input_field">
+                <label for="sphoneno"> Phone No. :</label>
+                <input type="number" id="sphoneno" name="sphoneno" class="input">
+            </div>
+            <div class="input_field">
+                <label for="semail"> Email Id :</label>
+                <input type="text" id="semail" name="semail" class="input">
+            </div>
+            <div class="input_field">
+                <input type="submit" value="Register" class="btn">
+            </div>
+        </form>
+        </div>
+    </div>
+</body>
+
+</html>

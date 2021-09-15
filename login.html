@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+<head>
+    <title> Log In</title>
+</head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Student Registration </title>
+<style type="text/css">
+    body {
+        background: skyblue;
+        padding: 10px;
+    }
+
+    .wrapper {
+        max-width: 350px;
+        max-height: min-content width: 100%;
+        background: white;
+        margin: 30px auto;
+        padding: 30px;
+    }
+
+    .wrapper .title {
+        width: 100%;
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 25px;
+        
+        text-align: center;
+        text-decoration: underline;
+    }
+
+    .wrapper .form {
+        max-width: 550px;
+        margin: 0 auto;
+    }
+
+    .wrapper .form .input_field {
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+    }
+
+    .wrapper .form .input_field label {
+        width: 200px;
+        margin-right: 10px;
+        font-size: 18px;
+    }
+
+    .wrapper .form .input_field .input,
+    .wrapper .form .input_field .textarea {
+        width: 100%;
+        font-size: 12px;
+        padding: 8px 10px;
+        border-radius: 3px;
+        transition: all 0.3s ease;
+    }
+
+    .wrapper .form .input_field .btn {
+        width: 100%;
+        padding: 8px 10px;
+        font-size: 18px;
+        border: 2;
+        cursor: pointer;
+        border-radius: 3px;
+    }
+
+    .wrapper .form .input_field:last-child {
+        margin-bottom: 0;
+    }
+
+    @media (max-width: 420px max-height:100vh) {
+        .wrapper .form .input_field {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .wrapper .form .input_field label {
+            margin-bottom: 5px;
+        }
+
+        .wrapper .form .input_field.terms {
+            flex-direction: row;
+        }
+    }
+</style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="title">
+            Enter Your Login details
+        </div>
+        <div class="form">
+            <form action="login.php" method="post">
+                <div class="input_field">
+                    <lable for="emailid">Enter Your Email Id: </lable>
+                    <input type="text" id="emailid" name="emailid" class="input">
+                </div>
+                <div class="input_field">
+                    <lable for="pass">Enter Your Password: </lable>
+                    <input type="password" id="pass" name="pass" class="input">
+                </div>
+                <div class="input_field">
+                    <input type="submit" value="Login" class="btn">
+                </div>
+            </form>
+        </div>
+
+    </div>
+</body>
+</html>
